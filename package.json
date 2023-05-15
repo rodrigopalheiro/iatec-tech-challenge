@@ -1,0 +1,45 @@
+{
+	"name": "iatec",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"dev:test": "vitest watch",
+		"build": "tsc && vite build",
+		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"fake:api": "json-server --no-cors --delay 320 --middlewares ./json-server-mid.js --watch db.json",
+		"preview": "vite preview",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.0",
+		"@mantine/core": "^6.0.10",
+		"@mantine/dates": "^6.0.10",
+		"@mantine/form": "^6.0.10",
+		"@mantine/hooks": "^6.0.10",
+		"@mantine/notifications": "^6.0.10",
+		"@tabler/icons-react": "^2.18.0",
+		"dayjs": "^1.11.7",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"zod": "^3.21.4"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.57.1",
+		"@typescript-eslint/parser": "^5.57.1",
+		"@vitejs/plugin-react": "^4.0.0",
+		"autoprefixer": "^10.4.14",
+		"body-parser": "^1.20.2",
+		"eslint": "^8.38.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.3.4",
+		"express": "^4.18.2",
+		"json-server": "^0.17.3",
+		"typescript": "^5.0.2",
+		"vite": "^4.3.2",
+		"vitest": "^0.31.0"
+	}
+}
